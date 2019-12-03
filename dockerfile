@@ -11,4 +11,4 @@ COPY main.cf /etc/postfix/main.cf
 
 EXPOSE 25/TCP
 
-CMD["tail -f /var/log/mail.log"]
+ENTRYPOINT["tail -f /var/log/mail.log"]
