@@ -13,10 +13,6 @@ unknown_local_recipient_reject_code = 550
 mynetworks = 127.0.0.0/8, 172.17.0.0/24
 smtpd_banner = $myhostname ESMTP $mail_name (Debian/GNU)
 
-debugger_command =
-         PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
-         ddd $daemon_directory/$process_name $process_id & sleep 5
-
 sendmail_path = /usr/sbin/sendmail
 newaliases_path = /usr/bin/newaliases
 mailq_path = /usr/bin/mailq
