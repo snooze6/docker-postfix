@@ -10,7 +10,7 @@ mydomain=domain.com
 myorigin=$mydomain
 
 unknown_local_recipient_reject_code = 550
-mynetworks = 0.0.0.0/8
+mynetworks = 127.0.0.0/8, 172.17.0.0/24
 smtpd_banner = $myhostname ESMTP $mail_name (Debian/GNU)
 
 debugger_command =
